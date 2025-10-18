@@ -11,7 +11,7 @@ It uses `spring-boot-starter-oauth2-resource-server` for JWT verification. This 
    Supabase issues a JWT.  
    Spring Security validates the token using the Resource Server setup ([`SecurityConfig`](src/main/java/com/tsafran/springsupabasejwtauth/security/SecurityConfig.java)).  
    
-   The resource server requires the following properties to validate the JWT:
+   The resource server requires the following properties to validate the JWT ([`application.properties`](src/main/resources/application.properties)):
 
   ```properties
   spring.security.oauth2.resourceserver.jwt.jwk-set-uri=https://[supabase-id].supabase.co/auth/v1/.well-known/jwks.json
